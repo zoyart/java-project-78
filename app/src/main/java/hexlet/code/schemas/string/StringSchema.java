@@ -23,6 +23,12 @@ public class StringSchema {
         return this;
     }
 
+    /**
+     * Проверяет, соответствует ли входная строка всем стратегиям валидации.
+     *
+     * @param input Входная строка для проверки.
+     * @return true, если входная строка проходит все стратегии валидации, иначе false.
+     */
     public boolean isValid(String input) {
         for (Map.Entry<String, ValidationStrategy> entry : strategies.entrySet()) {
             ValidationStrategy validationStrategy = entry.getValue();
