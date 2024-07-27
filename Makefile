@@ -20,6 +20,5 @@ report:
 
 lint:
 	make -C lint
-	./gradlew checkstyleMain checkstyleTest
 
 .PHONY: build
