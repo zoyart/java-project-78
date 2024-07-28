@@ -1,15 +1,13 @@
 package hexlet.code.schemas.string;
 
-import hexlet.code.schemas.ValidationStrategy;
-
 import java.util.Objects;
 
-public class RequiredValidation implements ValidationStrategy {
+public class RequiredValidation implements StringValidationStrategy<String> {
     @Override
-    public boolean validate(Object input) {
+    public boolean validate(String input) {
         if (Objects.isNull(input)) {
             return false;
         }
-        return !input.equals("");
+        return !input.isEmpty();
     }
 }
