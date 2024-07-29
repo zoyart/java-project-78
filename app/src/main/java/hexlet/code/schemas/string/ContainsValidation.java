@@ -1,9 +1,11 @@
 package hexlet.code.schemas.string;
 
+import hexlet.code.schemas.ValidationStrategy;
+
 /**
  * Класс ContainsValidation является стратегией валидации.
  */
-public class ContainsValidation implements StringValidationStrategy<String> {
+public class ContainsValidation implements ValidationStrategy<String> {
     private final String subStr;
 
     public ContainsValidation(String subStr) {

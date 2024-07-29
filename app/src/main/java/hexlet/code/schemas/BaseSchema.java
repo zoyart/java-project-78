@@ -1,12 +1,12 @@
 package hexlet.code.schemas;
 
-import hexlet.code.schemas.string.StringValidationStrategy;
+import hexlet.code.schemas.ValidationStrategy;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public abstract class BaseSchema<T> {
-    protected Map<String, StringValidationStrategy<T>> strategies = new HashMap<>();
+    protected Map<String, ValidationStrategy<T>> strategies = new HashMap<>();
 
     /**
      * Проверяет, соответствует ли входная строка всем стратегиям валидации.
@@ -15,8 +15,8 @@ public abstract class BaseSchema<T> {
      * @return true, если входная строка проходит все стратегии валидации, иначе false.
      */
     public boolean isValid(T input) {
-        for (Map.Entry<String, StringValidationStrategy<T>> entry : strategies.entrySet()) {
-            StringValidationStrategy<T> validationStrategy = entry.getValue();
+        for (Map.Entry<String, ValidationStrategy<T>> entry : strategies.entrySet()) {
+            ValidationStrategy<T> validationStrategy = entry.getValue();
             if (!validationStrategy.validate(input)) {
                 return false;
             }
