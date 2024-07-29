@@ -1,7 +1,6 @@
 package hexet.code;
 
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import hexlet.code.Validator;
 import hexlet.code.schemas.numeric.NumberSchema;
