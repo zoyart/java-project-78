@@ -6,6 +6,7 @@ import hexlet.code.schemas.ValidationStrategy;
  * Класс ContainsValidation является стратегией валидации.
  */
 public class ContainsValidation implements ValidationStrategy<String> {
+    public static final String NAME = "contains";
     private final String subStr;
 
     public ContainsValidation(String subStr) {
