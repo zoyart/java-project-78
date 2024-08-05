@@ -4,7 +4,7 @@ import hexlet.code.schemas.ValidationStrategy;
 
 import java.util.Map;
 
-public class SizeofValidation<K, V> implements ValidationStrategy<Map<K, V>> {
+public final class SizeofValidation<K, V> implements ValidationStrategy<Map<K, V>> {
     public static final String NAME = "sizeof";
     private final int size;
 

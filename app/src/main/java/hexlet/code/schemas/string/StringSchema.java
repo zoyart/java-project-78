@@ -2,8 +2,7 @@ package hexlet.code.schemas.string;
 
 import hexlet.code.schemas.BaseSchema;
 
-public class StringSchema extends BaseSchema<String> {
-
+public final class StringSchema extends BaseSchema<String> {
     public StringSchema required() {
         super.strategies.put(RequiredValidation.NAME, new RequiredValidation());
         return this;

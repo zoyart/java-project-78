@@ -2,7 +2,7 @@ package hexlet.code.schemas.numeric;
 
 import hexlet.code.schemas.BaseSchema;
 
-public class NumberSchema extends BaseSchema<Integer> {
+public final class NumberSchema extends BaseSchema<Integer> {
     public NumberSchema required() {
         super.strategies.put(RequiredValidation.NAME, new RequiredValidation());
         return this;

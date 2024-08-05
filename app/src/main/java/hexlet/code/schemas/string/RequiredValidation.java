@@ -2,7 +2,7 @@ package hexlet.code.schemas.string;
 
 import hexlet.code.schemas.ValidationStrategy;
 
-public class RequiredValidation implements ValidationStrategy<String> {
+public final class RequiredValidation implements ValidationStrategy<String> {
     public static final String NAME = "required";
 
     @Override

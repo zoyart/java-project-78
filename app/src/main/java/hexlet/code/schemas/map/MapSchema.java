@@ -6,7 +6,7 @@ import hexlet.code.schemas.ValidationStrategy;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapSchema<K, V> extends BaseSchema<Map<K, V>> {
+public final class MapSchema<K, V> extends BaseSchema<Map<K, V>> {
     private final Map<K, BaseSchema<V>> strategiesForKeys = new HashMap<>();
 
     public MapSchema<K, V> required() {
