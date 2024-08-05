@@ -27,9 +27,7 @@ public abstract class BaseSchema<T> {
      * @param strategiesForData  Стратегии валидации, где ключ - строка, а значение - стратегия валидации.
      * @return true, если значение проходит все стратегии валидации, иначе false.
      */
-    protected <R> boolean validateData(
-            R dataToValidate,
-            Map<String, ValidationStrategy<R>> strategiesForData) {
+    protected <R> boolean validateData(R dataToValidate, Map<String, ValidationStrategy<R>> strategiesForData) {
         /*
         Обработка null.
         1. Если данные == null и нет правила required, значит любые проверки будут true, можем сразу возвращать true

@@ -8,12 +8,12 @@ public final class SizeofValidation<K, V> implements ValidationStrategy<Map<K, V
     public static final String NAME = "sizeof";
     private final int size;
 
-    public SizeofValidation(int size) {
-        this.size = size;
+    public SizeofValidation(int paramSize) {
+        this.size = paramSize;
     }
 
     @Override
     public boolean validate(Map<K, V> map) {
-        return map.size() == size;
+        return map.size() == this.size;
     }
 }

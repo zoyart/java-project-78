@@ -4,7 +4,7 @@ import hexlet.code.schemas.map.MapSchema;
 import hexlet.code.schemas.numeric.NumberSchema;
 import hexlet.code.schemas.string.StringSchema;
 
-public class Validator {
+public final class Validator {
     /**
      * Возвращает объект класса StringSchema, который предоставляет методы для валидации строк.
      *

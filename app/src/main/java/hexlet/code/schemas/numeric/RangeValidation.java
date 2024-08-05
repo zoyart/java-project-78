@@ -7,9 +7,9 @@ public final class RangeValidation implements ValidationStrategy<Integer> {
     private final int start;
     private final int end;
 
-    public RangeValidation(int start, int end) {
-        this.start = start;
-        this.end = end;
+    public RangeValidation(int paramStart, int paramEnd) {
+        this.start = paramStart;
+        this.end = paramEnd;
     }
 
     @Override
