@@ -9,18 +9,18 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         Validator v = new Validator();
-        MapSchema<Float, String> schema = v.map();
+        MapSchema schema = v.map();
 
-        Map<Float, BaseSchema<String>> schemas = new HashMap<>();
-        schemas.put(0.1f, v.string().required());
-        schemas.put(0.2f, v.string().required().minLength(2));
+        Map<String, BaseSchema<String>> schemas = new HashMap<>();
+        schemas.put("firstName", v.string().required());
+        schemas.put("lastName", v.string().required().minLength(2));
 
         schema.shape(schemas);
 
-        Map<Float, String> human1 = new HashMap<>();
-        human1.put(0.1f, "John");
-        human1.put(0.2f, "Smith");
-        schema.isValid(human1); // true
+        Map<String, String> human1 = new HashMap<>();
+        human1.put("firstName", "John");
+        human1.put("lastName", "Smith");
+        System.out.println(schema.isValid(human1));
+         // true
     }
-
 }

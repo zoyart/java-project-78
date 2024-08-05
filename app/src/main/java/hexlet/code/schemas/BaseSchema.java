@@ -10,7 +10,7 @@ public abstract class BaseSchema<T> {
     protected Map<String, ValidationStrategy<T>> strategies = new HashMap<>();
 
     /**
-     * Проверяет, соответствует ли входная строка всем стратегиям валидации.
+     * Проверяет, соответствует ли переданное значение всем заданным стратегиям валидации.
      *
      * @param dataToValidate Входная строка для проверки.
      * @return true, если входная строка проходит все стратегии валидации, иначе false.
