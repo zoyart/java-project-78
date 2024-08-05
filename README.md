@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+### statuses:
 [![Actions Status](https://github.com/zoyart/java-project-78/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zoyart/java-project-78/actions) [![Makefile Workflow Status](https://github.com/zoyart/java-project-78/actions/workflows/makefile.yml/badge.svg)](https://github.com/zoyart/java-project-78/actions/workflows/makefile.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/b4f1803ce8698df6a1a2/maintainability)](https://codeclimate.com/github/zoyart/java-project-78/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/b4f1803ce8698df6a1a2/test_coverage)](https://codeclimate.com/github/zoyart/java-project-78/test_coverage)
 
 # Data  Validator
