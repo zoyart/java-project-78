@@ -9,8 +9,8 @@ public final class ContainsValidation implements ValidationStrategy<String> {
     public static final String NAME = "contains";
     private final String subStr;
 
-    public ContainsValidation(String subStr) {
-        this.subStr = subStr;
+    public ContainsValidation(String paramSubStr) {
+        this.subStr = paramSubStr;
     }
 
     /**
