@@ -24,7 +24,7 @@ public abstract class BaseSchema<T> {
      *
      * @param <R>                Тип данных для валидации.
      * @param dataToValidate     Значение для валидации.
-     * @param strategiesForData  Стратегии валидации, где ключ - строка, а значение - стратегия валидации.
+     * @param strategiesForData  Стратегии валидации, где ключ - название стратегии, а значение - стратегия валидации.
      * @return true, если значение проходит все стратегии валидации, иначе false.
      */
     protected <R> boolean validateData(R dataToValidate, Map<String, ValidationStrategy<R>> strategiesForData) {

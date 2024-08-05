@@ -10,6 +10,7 @@ Supports  validation of data  types  such  as:
 As  well  as  processing the values of the  keys  in the Map.
 
 **Features**
+
 If the **value is null** and there is **no required rule**, then **all** instructions will be validated automatically.
 # Usage
 ***Create validation schema***
