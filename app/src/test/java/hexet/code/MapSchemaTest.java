@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
 public final class MapSchemaTest {
-    private MapSchema schema;
+    private MapSchema<String, String> schema;
     private Validator validator;
 
     @BeforeEach
@@ -38,11 +38,11 @@ public final class MapSchemaTest {
         boolean actual1 = schema.sizeof(0).isValid(new HashMap<>());
         assertTrue(actual1);
 
-        schema = new MapSchema();
+        schema = new MapSchema<String, String>();
         boolean actual2 = schema.sizeof(1).isValid(new HashMap<>());
         assertFalse(actual2);
 
-        schema = new MapSchema();
+        schema = new MapSchema<String, String>();
         boolean actual3 = schema.sizeof(1).isValid(new HashMap<>(Map.of("abc", "foo")));
         assertTrue(actual3);
     }

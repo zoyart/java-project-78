@@ -3,7 +3,7 @@ package hexlet.code.schemas.numeric;
 import hexlet.code.schemas.ValidationStrategy;
 
 /**
- * Класс ContainsValidation является стратегией валидации.
+ * Класс PositiveValidation является стратегией валидации.
  */
 public final class PositiveValidation implements ValidationStrategy<Integer> {
     public static final String NAME = "positive";

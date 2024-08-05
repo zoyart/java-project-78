@@ -3,7 +3,7 @@ package hexlet.code.schemas.string;
 import hexlet.code.schemas.ValidationStrategy;
 
 /**
- * Класс ContainsValidation является стратегией валидации.
+ * Класс MinLengthValidation является стратегией валидации.
  */
 public final class MinLengthValidation implements ValidationStrategy<String> {
     public static final String NAME = "minLength";
