@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
-public class NumberSchemaTest {
-    NumberSchema schema;
+public final class NumberSchemaTest {
+    private NumberSchema schema;
 
     @BeforeEach
     public void setUp() {

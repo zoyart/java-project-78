@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class StringSchemaTest {
+public final class StringSchemaTest {
     private StringSchema schema;
 
     @BeforeEach
